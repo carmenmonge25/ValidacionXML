@@ -12,6 +12,7 @@
                                     <xs:restriction base="xs:string">
                                         <xs:pattern value=
                                         "[a-zA-Z0-9.+_\-*/=&amp;^]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
+                                        <!-- &amp; se pone ya que & es un caracter reservado-->
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
@@ -44,6 +45,7 @@
                                 <xs:simpleType>
                                     <xs:restriction base="xs:string">
                                         <xs:pattern value="[a-zA-Z0-9!@#$%^&amp;*\-_+=.]{8,64}"/>
+                                        <!-- &amp; se pone ya que & es un caracter reservado-->
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
